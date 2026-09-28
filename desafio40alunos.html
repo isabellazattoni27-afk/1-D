@@ -35,7 +35,7 @@
       <!-- ERRO 10: Link sem o atributo href -->
       <a>Sobre</a> | 
       <!-- ERRO 11: Atributo href com escrita errada ("herf") -->
-      <a herf="#contato">Contato</a>
+      <a href="#contato">Contato</a>
     <nav>
 
   </header>
@@ -98,8 +98,10 @@
       <!-- ERRO 26: Formulário sem o atributo 'action' ou 'method' -->
       <form>
         
-        <!-- ERRO 27: Elemento <label> com o atributo 'for' apontando para um ID inexistente -->
+        <!-- ERRO 27: Elemento <label> com o atributo 'for' apontando para um ID inexistente --> 
+        <!-- arrumei o erro-->
         <label for="nome-usuario">Nome Completo:</label>
+        <input type="text" id="nome-usuario" name="nome-usuario">
         <!-- ERRO 28: Input com 'id' diferente do 'for' do label e sem o atributo 'type' -->
         <input id="nome" name="nome">
         <br>
@@ -123,7 +125,7 @@
 
         <!-- ERRO 32: Botão criado com tag fictícia <btn> -->
         <!-- ERRO 33: Atributo 'onclick' com função CSS em vez de JavaScript -->
-        <btn onclick="background-color: red;">Enviar Dados</btn>
+        <button onclick="background-color: red;">Enviar Dados</button>
 
       </form>
     </section>
