@@ -69,3 +69,15 @@ Antes de clicar em **Create pull request**, verifique:
   - Clareza na descrição do Pull Request.
 
 ---
+
+---
+## 📋 Checklist de Validação Pontuação dentro do seu grupo criado:
+📜 Atividade	                        Pontos
+**Commit útil	**                      5
+**Pull Request aprovado**              10
+**Issue criada corretamente**          5
+**README documentado**                 15
+**Resolver Issue de outro colega**     10
+**Entregar antes do prazo	**          20
+
+---

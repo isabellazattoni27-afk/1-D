@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ERRO 01: Tag <meta> sem o sinal de fechamento '>' -->
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ERRO 02: Tag <title> sem fechamento correto (usou </tittle>) -->
+  <title>Desafio dos 45 Erros - Turma Técnica</tittle>
+
+  <!-- ERRO 03: Tag <style> aberta dentro do <head>, mas sem fechar a tag </style> no final -->
+  <style>
+    body { font-family: Arial, sans-serif; }
+    /* ERRO 04: CSS com sintaxe errada (faltou o ponto de classe ou '#' e usou ':' em vez de '{') */
+    .card-box { 
+      border: 1px solid red;
+    }
+</head>
+
+<!-- ERRO 05: Atributo do body escrito errado ("backgroundcolor" sem hífen) -->
+<!-- ERRO 06: Tag <body> com duas aspas abrindo no estilo inline -->
+<body style="margin: 0; backgroundcolor: #f0f0f0;">
+
+  <!-- ERRO 07: Tag de abertura do header com erro de digitação (<hedar>) -->
+  <header style="background-color: #0056b3; color: white; padding: 20px;">
+    
+    <!-- ERRO 08: Uso de tag <h1> duplicada no mesmo cabeçalho sem necessidade hierárquica -->
+    <h1>Portal Principal</h1>
+    <h1>Subtítulo do Portal</h1>
+
+    <!-- ERRO 09: Tag <nav> fechada antes de ter seus links adicionados -->
+    </nav>
+      <a href="#home">Home</a> | 
+      <!-- ERRO 10: Link sem o atributo href -->
+      <a>Sobre</a> | 
+      <!-- ERRO 11: Atributo href com escrita errada ("herf") -->
+      <a href="#contato">Contato</a>
+    <nav>
+
+  </header>
+
+  <!-- ERRO 12: Uso da tag obsoleta <center> (descontinuada no HTML5) -->
+  <center>
+    <h2>Área do Aluno</h2>
+  </center>
+
+  <main style="max-width: 800px; margin: 0 auto; padding: 20px;">
+
+    <!-- ERRO 13: Seção sem a tag de fechamento </section> no final -->
+    <section>
+      
+      <!-- ERRO 14: Salto de hierarquia de títulos (foi de h2 direto para h5) -->
+      <h3>Instruções do Exercício</h3>
+
+      <!-- ERRO 15: Tag <p> não fechada antes de abrir outra tag de bloco -->
+      <p>Sua missão é encontrar todos os erros deste arquivo e enviar a correção via Pull Request.
+      
+        <div style="color: red;"><p>Atenção: leia o código atentamente!</p> </div>
+      
+
+      <p style="color=blue;">Dica: confira o CSS inline e as tags HTML!</p>
+
+      <!-- ERRO 18: Imagem sem o atributo 'alt' obrigatório (acessibilidade) -->
+      <!-- ERRO 19: Caminho da imagem com barra invertida estilo Windows em vez de barra normal -->
+      <img src="images\logo.png" width="200" alt="logo da empresa" height="100">
+
+      <!-- ERRO 20: Imagem com atributo 'src' completamente em branco -->
+      <img src="" alt="Imagem promocional">
+
+    <!-- ERRO 21: Fechamento de tag inexistente </secion> -->
+    </section>
+
+    <section>
+      <h3>Lista de Tarefas</h3>
+
+      <!-- ERRO 22: Tag de lista ordenada <ol> contendo itens soltos sem a tag <li> -->
+      <ol>
+        Item 1: Baixar o código
+        Item 2: Criar uma branch
+        <!-- ERRO 23: Item de lista <li> fechado com a tag de parágrafo </p> -->
+        <li>Item 3: Corrigir os erros</p>
+      </ol>
+
+      <!-- ERRO 24: Lista não ordenada <ul> contendo uma tag <p> direta sem ser filha de um <li> -->
+      <ul>
+    <li>
+        <p>Regras do projeto:</p> </li>
+        <li>Trabalhar em equipe</li>
+        <!-- ERRO 25: Atributo 'style' dentro do <li> sem o sinal de igual (style"color:green;") -->
+        <li style"color: green;">Manter o código limpo</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Formulário de Cadastro</h3>
+
+      <!-- ERRO 26: Formulário sem o atributo 'action' ou 'method' -->
+      <form>
+        
+        <!-- ERRO 27: Elemento <label> com o atributo 'for' apontando para um ID inexistente --> 
+        <!-- arrumei o erro-->
+        <label for="nome-usuario">Nome Completo:</label>
+        <input type="text" id="nome-usuario" name="nome-usuario">
+        <!-- ERRO 28: Input com 'id' diferente do 'for' do label e sem o atributo 'type' -->
+        <input id="nome" name="nome">
+        <br>
+
+        <label for="email">E-mail:</label>
+        <!-- ERRO 29: Atributo 'type' com valor inválido ("emai" em vez de "email") -->
+        <input type="emai" id="email">
+        <br>
+
+        <!-- ERRO 30: Input do tipo radio sem o atributo 'name' para agrupar as opções -->
+        <p>Selecione seu curso:</p>
+        <input type="radio" id="dev" value="dev">
+        <label for="dev">Desenvolvimento de Sistemas</label>
+        <input type="radio" id="net" value="net">
+        <label for="net">Redes de Computadores</label>
+        <br><br>
+
+        <!-- ERRO 31: Campo de texto <textarea> fechado com a tag de input </input> -->
+        <label for="mensagem">Observações:</label>
+        <textarea id="mensagem" rows="4"></textarea>
+
+        <!-- ERRO 32: Botão criado com tag fictícia <btn> -->
+        <!-- ERRO 33: Atributo 'onclick' com função CSS em vez de JavaScript -->
+        <button onclick="background-color: red;">Enviar Dados</button>
+
+      </form>
+    </section>
+
+    <section>
+      <h3>Tabela de Pontuação</h3>
+
+      <!-- ERRO 34: Tabela sem a tag <tbody> ou <thead> básica, misturando linhas soltas -->
+      <table>
+        <!-- ERRO 35: Célula de cabeçalho <th> usada diretamente dentro da <table> sem uma linha <tr> -->
+        <!-- ERRO CORRIGIDO -->
+        
+         <tr>
+        <th>Aluno</th>
+        <th>Pontos</th>
+        </tr>
+         
+        <tr>
+          <td>João Silva</td>
+          <!-- ERRO 36: Célula de tabela <td> fechada com <th>; resolvido -->
+          <td>85</td>
+        </tr>
+        <tr>
+          <!-- ERRO 37: Linha da tabela com número de colunas inconsistente (apenas 1 <td> em vez de 2) -->
+    <td>Maria Souza</td>
+    <tr>Segundo Dado</tr>
+        </tr>
+      <!-- ERRO 38: Tabela fechada com a tag de formulário </form> -->
+      </form>
+
+    </section>
+
+    <!-- ERRO 39: Tag <script> inline com código JavaScript sem aspas no console.log e sem fechar a tag com '>' -->
+    <script
+      console.log(Fim da pagina);
+    </script>
+
+  </main>
+
+  <!-- ERRO 40: Rodapé <footer> colocado fora da tag <body>/estruturalmente mal posicionado -->
+  <footer style="background-color: #333; color: white; text-align: center; padding: 10px;">
+    
+    <!-- ERRO 41: Atributo style no CSS inline usando vírgula em vez de ponto e vírgula -->
+    <p style="font-size: 12px, color: #ccc">
+      &copy; 2026 - Escola Técnica. Todos os direitos reservados.
+    </p>
+
+    <!-- ERRO 42: Link de rede social usando 'target="_blank"' sem o atributo 'rel="noopener noreferrer"' (segurança) -->
+    <!-- ERRO 43: Link externo com URL sem o protocolo (faltou o 'https://') -->
+    <a href="www.instagram.com" target="_blank">Nosso Instagram</a>
+
+    <!-- ERRO 44: Tag <p> aberta e fechada vazia sem nenhum conteúdo dentro -->
+    <p></p>
+
+  </footer>
+
+</body>
+
+<!-- ERRO 45: Tag </html> fechada duas vezes no final do arquivo -->
+</html>
+</html>
